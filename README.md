@@ -8,7 +8,7 @@ este es un chatbot que puede realizar análisis de datos y dar consejos para red
 /suggest: te permite añadir un consejo \n
 /delete (número de consejo): Elimina un consejo hecho por la comunidad. Necesario el rol "Moderador" \n
 /duck: Pone una imagen de un pato aleatoria por diversión. \n
-/calc (Número 1) (Número 2): Suma 2 números.
+/add (Número 1) (Número 2): Suma 2 números. \n /heh: ríe.
 # tecnologías
 python and
 discord
