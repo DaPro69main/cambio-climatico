@@ -41,7 +41,7 @@ async def duck(ctx):
     image_url = get_duck_image_url()
     await ctx.send(image_url)
 
-@bot.command('upload')
+@bot.command('upload') #This piece of code has no use yet
 async def upload(ctx):
     if ctx.message.attachments:
         for i in ctx.message.attachments:
@@ -57,6 +57,10 @@ abc = transfer2()
 @bot.command()
 async def get_informed(ctx):
     await ctx.send(f"Aquí hay una noticia sobre el cambio climático, toma conciencia: {abc}")
+
+@bot.command()
+async def help(ctx):
+    await ctx.send("/get informed: resume noticias relacionadas \n /help: muestra todo esto\n /advice: te aconseja una práctica que te permite reducir los efectos del calentamiento global \n /hello: te saluda :) \n /suggest: te permite añadir un consejo \n /delete (número de consejo): Elimina un consejo hecho por la comunidad. Necesario el rol "Moderador" \n /duck: Pone una imagen de un pato aleatoria por diversión. \n /add (Número 1) (Número 2): Suma 2 números. \n /heh: ríe.")
 
 @bot.command()
 async def suggest(ctx,*, advice:str):
